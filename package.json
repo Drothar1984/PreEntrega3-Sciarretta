@@ -1,0 +1,18 @@
+{
+  "name": "proyecto-entrega-tres",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000p\u0000r\u0000e\u0000-\u0000e\u0000n\u0000t\u0000r\u0000e\u0000g\u0000a\u0000-\u0000t\u0000r\u0000e\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+   	"watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
