@@ -1,4 +1,13 @@
-@import "../scss/componentes/header";
-@import "../scss/componentes/main";
-@import "../scss/componentes/footer";
-@import "../scss/base/colors"
+@import "componentes/header";
+@import "componentes/main";
+@import "componentes/footer";
+@import "base/colors";
+
+
+// reset general
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
