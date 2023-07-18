@@ -1,0 +1,40 @@
+//estilos del main
+
+main{
+    height: 80vh;
+}
+
+main div h3{
+
+}
+
+main div p{
+
+}
+
+main div button{
+
+}
+
+main div img{
+    display: none;
+}
+
+
+//HAY QUE PONER TODO LO DE SASS MIXIN ETC... SON 5 EN TOTAL TODAS DIFERENTES
+
+
+
+//estilos al cambio de tamaño a pc
+
+@media screen and (min-width: 1024px) {
+
+    main div h3{
+        font-size: 4em;
+    }
+
+    .contenedor-parrafo-escrito{
+        font-size: 1.2em;       
+    }
+
+}

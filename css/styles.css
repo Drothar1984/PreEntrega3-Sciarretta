@@ -18,6 +18,18 @@ header section h2 {
   header section h2 {
     display: none; } }
 
+main {
+  height: 80vh; }
+
+main div img {
+  display: none; }
+
+@media screen and (min-width: 1024px) {
+  main div h3 {
+    font-size: 4em; }
+  .contenedor-parrafo-escrito {
+    font-size: 1.2em; } }
+
 footer p {
   display: flex;
   justify-content: center;
