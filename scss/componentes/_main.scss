@@ -1,19 +1,37 @@
 //estilos del main
 
+@import "../base/colors";
+
+
 main{
     height: 80vh;
+       
 }
 
 main div h3{
-
+    font-size: 2rem;
 }
 
 main div p{
-
+    text-align: justify;
 }
 
-main div button{
 
+main div button{
+    background-color: $color-principal-primario;
+    border: 5px solid $color-principal-secundario;
+    height: 50px;
+    width: 150px;
+        &:hover{
+            background-color: $color-principal-primario-hover;
+            border: 5px solid $color-principal-secundario-hover;
+                a{
+                    color: $color-principal-primario;
+                        &:hover{
+                            color: green;
+                        }
+                }
+        } 
 }
 
 main div img{

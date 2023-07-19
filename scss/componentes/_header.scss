@@ -1,20 +1,33 @@
 // estilos del header
 
-header nav div div h1{
-    padding-right: 50px;
-    color: rgb(144, 0, 255);
-    display: none;
-}
+//imports
+
+@import "../base/colors";
+
+
+//header nav div div h1{
+//    padding-right: 50px;
+//    color: rgb(144, 0, 255);
+//    display: none;
+//}
 
 header nav div{
+
     padding-left: 10px;
+
+        div h1{
+            padding-right: 50px;
+            color: $color-principal-titulo;
+            display: none;
+        }
+
 }
 
 header section h2{
     font-size: 3rem;
     display: flex;
     justify-content: center;
-    color: rgb(149, 0, 255);
+    color: $color-principal-titulo;
 }
 
 //estilos al cambio de tamaño a tablet

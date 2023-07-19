@@ -1,16 +1,15 @@
-header nav div div h1 {
-  padding-right: 50px;
-  color: #9000ff;
-  display: none; }
-
 header nav div {
   padding-left: 10px; }
+  header nav div div h1 {
+    padding-right: 50px;
+    color: #9000ff;
+    display: none; }
 
 header section h2 {
   font-size: 3rem;
   display: flex;
   justify-content: center;
-  color: #9500ff; }
+  color: #9000ff; }
 
 @media screen and (min-width: 800px) {
   header nav div div h1 {
@@ -20,6 +19,25 @@ header section h2 {
 
 main {
   height: 80vh; }
+
+main div h3 {
+  font-size: 2rem; }
+
+main div p {
+  text-align: justify; }
+
+main div button {
+  background-color: #b9fff0;
+  border: 5px solid #466efd;
+  height: 50px;
+  width: 150px; }
+  main div button:hover {
+    background-color: #00e0b0;
+    border: 5px solid #00aee8; }
+    main div button:hover a {
+      color: #b9fff0; }
+      main div button:hover a:hover {
+        color: green; }
 
 main div img {
   display: none; }
