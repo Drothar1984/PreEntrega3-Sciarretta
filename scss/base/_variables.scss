@@ -1,0 +1,51 @@
+// COLORES PRINCIPALES
+
+//titulos header
+
+$color-principal-titulo: rgb(255, 255, 255);
+$color-fondo-header: rgb(0, 0, 0);
+$color-letras-nav: (255, 255, 255);
+
+
+//boton main
+
+$color-principal-primario: #b9fff0;
+$color-principal-secundario: #466efd;
+
+$color-principal-primario-hover: #00e0b0;
+$color-principal-secundario-hover: #00aee8;
+
+
+//estilo boton
+
+$style-button-index:  #0004ff;
+//letras del boton
+
+$color-letras-boton: black;
+
+//boton paginas secunadarias
+
+
+
+//TIPOGRAFIA
+
+$titulo-principal: Arial, Helvetica, sans-serif;
+
+$parrafo-principal: Arial, Helvetica, sans-serif;
+
+
+
+//BOTONES
+
+
+
+// IMAGENES DE FONDO
+
+//
+
+.fondo-index{    
+    background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
+    
+    height: 100vh;
+    
+}

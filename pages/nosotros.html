@@ -18,48 +18,39 @@
 
     <!-- inicio del header -->
     <header>
-        <!-- menu de bt -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">          
-                <!-- logo del nav -->    
-                <img src="../scss/assets/logo grande.jpg" alt="logo de la policia de la ciudad" style="max-width: 100px;">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>             
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Modalidades
-                        </a>
-                        <ul class="dropdown-menu"> 
-                            <li><a class="dropdown-item" href="pages/compromiso.html">Punto de Compromiso</a></li>
-                            <li><a class="dropdown-item" href="pages/phising.html">Phishing</a></li>
-                            <li><a class="dropdown-item" href="pages/skimming.html">Skimming</a></li>
-                            <li><a class="dropdown-item" href="pages/identidad.html">Sustraccion de Identidad</a></li>                      
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
-                        </ul>
-                    </li>                  
-                </ul>          
-                <!-- titulo principal -->      
-                <div class="modal-header">
-                    <h1 class="modal-title" style="font-size: 5rem; text-decoration: underline;">
-                    Policia de la Ciudad
-                    </h1>
-                </div>
-              </div>
-            </div>
-        </nav>
-        <section class="section">
-            <h2 class="section-secundario">
-              Policia de la Ciudad
-            </h2>
-        </section>
-    </header>
+        
+      <!-- menu tipo nav -->
+      <nav class="menu">
+          
+          <div class="menu-contenedor">
+              <!-- imagente logo nav izquierdo -->
+              <img src="../scss/assets/policia de la ciudad.png" alt="" class="menu-img">            
+              <!-- boton del menu nav-->
+              <ul class="menu-contenedor-boton">
+                  <!-- menu hamburguesa de bootstrap-->
+                  <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu de la División
+                      </a>
+                        
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                          <li><a class="dropdown-item" href="#">Sustraccion de Identidiad</a></li>
+                          <li><a class="dropdown-item" href="#">Phising</a></li>
+                          <li><a class="dropdown-item" href="#">Skimming</a></li>
+                          <li><a class="dropdown-item" href="#">Punto de Compromiso</a></li>
+                          <li><a class="dropdown-item" href="#">Contacto</a></li>
+                      </ul>                                           
+              </ul>
+          </div>
+          <!-- titulo principal -->
+          <h1 class="menu-titulo">
+                  Policia de la ciudad
+          </h1>
+          
+      </nav>
+              
+  </header>
     
     <!-- contenido principal -->
     <main>

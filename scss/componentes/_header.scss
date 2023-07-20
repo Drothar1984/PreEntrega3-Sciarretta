@@ -2,48 +2,64 @@
 
 //imports
 
-@import "../base/colors";
+@import "../base/variables";
 
+/*-------- HEADER ----------*/
 
-//header nav div div h1{
-//    padding-right: 50px;
-//    color: rgb(144, 0, 255);
-//    display: none;
-//}
+/* BARRA ---- NAVEGADOR */
 
-header nav div{
-
-    padding-left: 10px;
-
-        div h1{
-            padding-right: 50px;
-            color: $color-principal-titulo;
-            display: none;
-        }
-
-}
-
-header section h2{
-    font-size: 3rem;
+header nav{
+    
+    background-color: black;
+    /*para que se mueva al scrolear*/
+    position: sticky;   
+    top: 0; 
+    height: 9rem;   
     display: flex;
-    justify-content: center;
-    color: $color-principal-titulo;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+        div{
+            display: flex;
+            align-items: center;
+
+            img{
+                padding: 20px;
+                max-width: 130px;        
+                justify-content: center;
+                align-self: flex-start;
+            }
+        }
 }
 
-//estilos al cambio de tamaño a tablet
-
-@media screen and (min-width: 800px) {
-
+header nav h1{
     
-    header nav div div h1{
-        display: block;
-    }
-    
-    header section h2{
-        display: none;
-    }
+            color: $color-principal-titulo;
+            font-family: $titulo-principal;
+            font-size: 6rem;
+            padding: 20px;
+            display: flex;            
+            align-self: auto;
 
+        
+}
+
+header nav div ul{    
+    justify-content: start;
+    align-self: center;
+    
+        div ul li:hover{
+                    background-color: $color-principal-primario-hover;
+                 
+                       a:hover{
+                            background-color: aqua;
+
+                       
+                }
+        }
 }
 
 
+        
 

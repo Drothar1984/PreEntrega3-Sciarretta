@@ -1,6 +1,6 @@
 //estilos del main
 
-@import "../base/colors";
+@import "../base/variables";
 
 
 main{
@@ -14,6 +14,7 @@ main div h3{
 
 main div p{
     text-align: justify;
+    font-family: $parrafo-principal;
 }
 
 

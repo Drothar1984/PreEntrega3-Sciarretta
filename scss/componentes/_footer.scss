@@ -1,5 +1,17 @@
+//estilos del footer
+
+//imports
+
+@import "../base/variables";
+
+/*-------------- FOOTER ------------------*/
+
+/*FOOTER AL FONDO*/
+
 footer p{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    position: sticky;   
+     
 }

@@ -1,21 +1,47 @@
-header nav div {
-  padding-left: 10px; }
-  header nav div div h1 {
-    padding-right: 50px;
-    color: #9000ff;
-    display: none; }
+.fondo-index {
+  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
+  height: 100vh; }
 
-header section h2 {
-  font-size: 3rem;
+/*-------- HEADER ----------*/
+/* BARRA ---- NAVEGADOR */
+header nav {
+  background-color: black;
+  /*para que se mueva al scrolear*/
+  position: sticky;
+  top: 0;
+  height: 9rem;
   display: flex;
-  justify-content: center;
-  color: #9000ff; }
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px; }
+  header nav div {
+    display: flex;
+    align-items: center; }
+    header nav div img {
+      padding: 20px;
+      max-width: 130px;
+      justify-content: center;
+      align-self: flex-start; }
 
-@media screen and (min-width: 800px) {
-  header nav div div h1 {
-    display: block; }
-  header section h2 {
-    display: none; } }
+header nav h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+  padding: 20px;
+  display: flex;
+  align-self: auto; }
+
+header nav div ul {
+  justify-content: start;
+  align-self: center; }
+  header nav div ul div ul li:hover {
+    background-color: #00e0b0; }
+    header nav div ul div ul li:hover a:hover {
+      background-color: aqua; }
+
+.fondo-index {
+  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
+  height: 100vh; }
 
 main {
   height: 80vh; }
@@ -24,7 +50,8 @@ main div h3 {
   font-size: 2rem; }
 
 main div p {
-  text-align: justify; }
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif; }
 
 main div button {
   background-color: #b9fff0;
@@ -48,10 +75,21 @@ main div img {
   .contenedor-parrafo-escrito {
     font-size: 1.2em; } }
 
+.fondo-index {
+  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
+  height: 100vh; }
+
+/*-------------- FOOTER ------------------*/
+/*FOOTER AL FONDO*/
 footer p {
   display: flex;
   justify-content: center;
-  margin-top: 2rem; }
+  margin-top: 3rem;
+  position: sticky; }
+
+.fondo-index {
+  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
+  height: 100vh; }
 
 * {
   padding: 0;
