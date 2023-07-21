@@ -10,7 +10,7 @@
 
 header nav{
     
-    background-color: black;
+    background-color: $color-fondo-header;
     /*para que se mueva al scrolear*/
     position: sticky;   
     top: 0; 
@@ -41,6 +41,7 @@ header nav h1{
             padding: 20px;
             display: flex;            
             align-self: auto;
+            display: none;
 
         
 }
@@ -61,5 +62,29 @@ header nav div ul{
 }
 
 
-        
+//estilos al cambio de tamaño a tablet
+
+@media screen and (min-width: 600px) {
+
+    
+}
+
+
+//estilos al cambio de tamaño a pc
+
+@media screen and (min-width: 1300px) {
+
+    header nav h1{
+            
+        display: block;
+
+    
+    }
+}
+    
+
+
+
+
+
 

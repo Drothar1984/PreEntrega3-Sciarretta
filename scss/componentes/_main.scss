@@ -4,25 +4,63 @@
 
 
 main{
-    height: 80vh;
+    height: 80vh;    
+
+        section h2{
+            margin-top: 1rem;
+            color: $color-principal-titulo;
+            font-size: 3rem;
+            text-align: center;
+        }
        
 }
 
-main div h3{
-    font-size: 2rem;
+main div{
+
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "escritura"
+    "boton";
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin: 2%;
+
+        div h3{
+            font-size: 2rem;
+            color: $color-principal-primario;
+        }
+}
+
+.contenedor-titulo{
+    text-align: center;
+    grid-area: titulo;
 }
 
 main div p{
     text-align: justify;
     font-family: $parrafo-principal;
+    font-size: 0.8em;    
+    white-space: pre-line; /*saltos de linea en el texto*/
+    color: $color-principal-primario;
+    grid-area: escritura;
 }
 
+main div img{
+    display: none;
+    grid-area: foto;
+}
 
 main div button{
     background-color: $color-principal-primario;
     border: 5px solid $color-principal-secundario;
     height: 50px;
     width: 150px;
+    margin-top: 10px;
+    text-align: center;
+    grid-area: boton;
+    border-radius: 30%;
         &:hover{
             background-color: $color-principal-primario-hover;
             border: 5px solid $color-principal-secundario-hover;
@@ -40,20 +78,28 @@ main div img{
 }
 
 
+
+
 //HAY QUE PONER TODO LO DE SASS MIXIN ETC... SON 5 EN TOTAL TODAS DIFERENTES
 
 
 
+//estilos al cambio de tamaño a tablet
+
+@media screen and (min-width: 600px) {
+
+    
+}
+
+
 //estilos al cambio de tamaño a pc
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
 
-    main div h3{
-        font-size: 4em;
+    main section h2{
+        display: none;
     }
-
-    .contenedor-parrafo-escrito{
-        font-size: 1.2em;       
-    }
-
 }
+    
+
+

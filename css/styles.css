@@ -1,11 +1,16 @@
-.fondo-index {
-  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
-  height: 100vh; }
+.body-index {
+  background-color: black; }
+
+html {
+  scroll-behavior: smooth; }
+  html body {
+    overflow-y: auto;
+    overflow-x: hidden; }
 
 /*-------- HEADER ----------*/
 /* BARRA ---- NAVEGADOR */
 header nav {
-  background-color: black;
+  background-color: #131313;
   /*para que se mueva al scrolear*/
   position: sticky;
   top: 0;
@@ -29,7 +34,8 @@ header nav h1 {
   font-size: 6rem;
   padding: 20px;
   display: flex;
-  align-self: auto; }
+  align-self: auto;
+  display: none; }
 
 header nav div ul {
   justify-content: start;
@@ -39,45 +45,87 @@ header nav div ul {
     header nav div ul div ul li:hover a:hover {
       background-color: aqua; }
 
-.fondo-index {
-  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
-  height: 100vh; }
+@media screen and (min-width: 1300px) {
+  header nav h1 {
+    display: block; } }
+
+.body-index {
+  background-color: black; }
+
+html {
+  scroll-behavior: smooth; }
+  html body {
+    overflow-y: auto;
+    overflow-x: hidden; }
 
 main {
   height: 80vh; }
+  main section h2 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center; }
 
-main div h3 {
-  font-size: 2rem; }
+main div {
+  display: grid;
+  grid-template-areas: "titulo" "escritura" "boton";
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin: 2%; }
+  main div div h3 {
+    font-size: 2rem;
+    color: #dddddd; }
+
+.contenedor-titulo {
+  text-align: center;
+  grid-area: titulo; }
 
 main div p {
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  white-space: pre-line;
+  /*saltos de linea en el texto*/
+  color: #dddddd;
+  grid-area: escritura; }
+
+main div img {
+  display: none;
+  grid-area: foto; }
 
 main div button {
-  background-color: #b9fff0;
+  background-color: #dddddd;
   border: 5px solid #466efd;
   height: 50px;
-  width: 150px; }
+  width: 150px;
+  margin-top: 10px;
+  text-align: center;
+  grid-area: boton;
+  border-radius: 30%; }
   main div button:hover {
     background-color: #00e0b0;
     border: 5px solid #00aee8; }
     main div button:hover a {
-      color: #b9fff0; }
+      color: #dddddd; }
       main div button:hover a:hover {
         color: green; }
 
 main div img {
   display: none; }
 
-@media screen and (min-width: 1024px) {
-  main div h3 {
-    font-size: 4em; }
-  .contenedor-parrafo-escrito {
-    font-size: 1.2em; } }
+@media screen and (min-width: 1300px) {
+  main section h2 {
+    display: none; } }
 
-.fondo-index {
-  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
-  height: 100vh; }
+.body-index {
+  background-color: black; }
+
+html {
+  scroll-behavior: smooth; }
+  html body {
+    overflow-y: auto;
+    overflow-x: hidden; }
 
 /*-------------- FOOTER ------------------*/
 /*FOOTER AL FONDO*/
@@ -87,9 +135,14 @@ footer p {
   margin-top: 3rem;
   position: sticky; }
 
-.fondo-index {
-  background: linear-gradient(rgba(7, 5, 12, 0.15), rgba(5, 7, 12, 0.15)), url(../assets/imagen1-copia.jpg);
-  height: 100vh; }
+.body-index {
+  background-color: black; }
+
+html {
+  scroll-behavior: smooth; }
+  html body {
+    overflow-y: auto;
+    overflow-x: hidden; }
 
 * {
   padding: 0;

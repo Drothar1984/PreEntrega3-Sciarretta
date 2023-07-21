@@ -10,11 +10,11 @@
     <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- link css -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">    
 
 </head>
 
-<body class="fondo-index">
+<body class="body-index">
 
     <!-- inicio del header -->
     <header>
@@ -34,12 +34,12 @@
                         </a>
                           
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                            <li><a class="dropdown-item" href="#">Sustraccion de Identidiad</a></li>
-                            <li><a class="dropdown-item" href="#">Phising</a></li>
-                            <li><a class="dropdown-item" href="#">Skimming</a></li>
-                            <li><a class="dropdown-item" href="#">Punto de Compromiso</a></li>
-                            <li><a class="dropdown-item" href="#">Contacto</a></li>
+                            <li><a class="dropdown-item" href="pages/nosotros.html">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="pages/identidad.html">Sustraccion de Identidiad</a></li>
+                            <li><a class="dropdown-item" href="pages/phising.html">Phising</a></li>
+                            <li><a class="dropdown-item" href="pages/skimming.html">Skimming</a></li>
+                            <li><a class="dropdown-item" href="pages/compromiso.html">Punto de Compromiso</a></li>
+                            <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
                         </ul>                                           
                 </ul>
             </div>
@@ -53,15 +53,46 @@
     </header>
     
     <!-- contenido principal -->
-    <main>
+    <main class="contenedor">
         
+        <!-- titulo secundario -->
+        <section>
+            <h2>
+              Policia de la Ciudad
+            </h2>
+        </section>
+        <!--contenedor del main principal -->
         <div>
-            <h3>
-                Division Fraudes Bancarios
-            </h3>
+            <!--titulo de la division-->
+            <div class="contenedor-titulo">
+                <h3>
+                    Division Fraudes Bancarios
+                </h3>
+            </div>
+            <!--contenedor del parrafo-->
+            <div class="contenedor-parrafo">
+                <p class="contenedor-parrafo-escrito">
+                La misión de la División Fraudes Bancarios es prevenir, detectar e investigar cualquier actividad fraudulenta que se pueda llevar a cabo en el ámbito bancario. Esta división tiene como objetivo principal proteger a los clientes y a la instituciones financieras contra cualquier tipo de fraude, incluyendo el robo de identidad, la suplantación de cuentas, la falsificación de documentos, el fraude electrónico y cualquier otra forma de fraude financiero.
+                    
+                Para cumplir con esta misión, se trabaja en estrecha colaboración con otros departamentos de la institución financiera, así como con autoridades gubernamentales y otras organizaciones de la industria financiera. También se encarga de desarrollar y aplicar políticas, procedimientos y tecnologías avanzadas para detectar y prevenir los fraudes bancarios. 
+                    
+                En definitiva, la misión de la División Fraudes Bancarios es proteger la integridad y la reputación de la institución financiera, así como garantizar la confianza y la seguridad de los clientes y del sistema financiero en general.
+    
+                </p>
+            </div>
+            <!--contenedor del boton-->
+            <div class="contenedor-boton">
+                <button class="contenedor-boton-estilo">
+                <a href="pages/nosotros.html">Bienvenidos</a>
+                </button>
+            </div>
+            <!--contenedor de la foto principal-->
+            <div class="contenedor-foto">
+                <img src="scss/assets/imagen1-copia.jpg" alt="imagen ilustrativa de la division fraudes bancarios">
+            </div>
         </div>
-
- 
+            
+    </main>
     <!-- Pie de pagina -->
     <footer>
         <p>
