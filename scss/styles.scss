@@ -14,3 +14,12 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    /*para que el contenido ocupe el 100% del alto*/
+    min-height: 100vh;
+}
+
+
+

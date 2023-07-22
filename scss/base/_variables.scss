@@ -3,18 +3,24 @@
 //titulos header
 
 $color-principal-titulo: rgb(255, 255, 255);
+$color-alternativo-titulo: rgb(0, 0, 0);
+
 $color-fondo-header: rgb(19, 19, 19);
+
 $color-letras-nav: (255, 255, 255);
+
 $color-fondo-generico: rgb(0, 0, 0);
+$color-fondo-alternativo: rgb(255, 255, 255);
+$color-fondo-alternativo-dos: #F7F6FB;
 
 
 //boton main
 
 $color-principal-primario: #dddddd;
-$color-principal-secundario: #466efd;
+$color-principal-secundario: #000000;
 
-$color-principal-primario-hover: #00e0b0;
-$color-principal-secundario-hover: #00aee8;
+$color-principal-primario-hover: #6b6b6b;
+$color-principal-secundario-hover: #484848;
 
 
 //estilo boton
@@ -24,7 +30,9 @@ $style-button-index:  #0004ff;
 
 $color-letras-boton: black;
 
-//boton paginas secunadarias
+//footer
+
+$color-footer-primario: rgb(134, 134, 134);
 
 
 
@@ -45,7 +53,7 @@ $parrafo-principal: Arial, Helvetica, sans-serif;
 // ESTILOS DE PANTALLA GENERAL
 
 .body-index{
-    background-color: $color-fondo-generico;
+    background-color: $color-fondo-alternativo-dos;
 }
 
 //

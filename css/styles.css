@@ -1,5 +1,6 @@
+@charset "UTF-8";
 .body-index {
-  background-color: black; }
+  background-color: #F7F6FB; }
 
 html {
   scroll-behavior: smooth; }
@@ -41,16 +42,17 @@ header nav div ul {
   justify-content: start;
   align-self: center; }
   header nav div ul div ul li:hover {
-    background-color: #00e0b0; }
+    background-color: #6b6b6b; }
     header nav div ul div ul li:hover a:hover {
-      background-color: aqua; }
+      background-color: #8c8c8c; }
 
 @media screen and (min-width: 1300px) {
   header nav h1 {
     display: block; } }
 
+/*estilos del main*/
 .body-index {
-  background-color: black; }
+  background-color: #F7F6FB; }
 
 html {
   scroll-behavior: smooth; }
@@ -58,68 +60,149 @@ html {
     overflow-y: auto;
     overflow-x: hidden; }
 
+/*estilos directos al main*/
 main {
-  height: 80vh; }
+  /*para que ocupe el 80% de lo disponible*/
+  height: 80vh;
+  /*hace que el contenido principal ocupe todo el espacio disponible en el eje vertical*/
+  flex: 1;
+  /*distancia entre los elementos*/
+  padding: 10px;
+  /*estilos del titulo secundario*/ }
   main section h2 {
     margin-top: 1rem;
-    color: white;
+    color: black;
     font-size: 3rem;
     text-align: center; }
 
+/*estilos al contenedor div contenedor*/
 main div {
   display: grid;
   grid-template-areas: "titulo" "escritura" "boton";
   justify-content: center;
   align-items: center;
-  gap: 2%;
-  margin: 2%; }
-  main div div h3 {
-    font-size: 2rem;
-    color: #dddddd; }
+  gap: 1%;
+  margin: 1%;
+  border: 1px solid black;
+  margin-bottom: 1%;
+  /*estilos al contenedor del titulo de la division*/
+  /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
+  /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
+  /*estilos al contenedor de la imagen -- simplemente se le determino el area del grid*/ }
+  main div .contenedor-titulo {
+    text-align: center;
+    grid-area: titulo;
+    /*estilos directos al titulo de la division*/ }
+    main div .contenedor-titulo h3 {
+      font-size: 2rem;
+      color: black; }
+  main div .contenedor-parrafo {
+    grid-area: escritura;
+    /*estilos al parrafo*/ }
+    main div .contenedor-parrafo p {
+      text-align: justify;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8em;
+      white-space: pre-line;
+      /*saltos de linea en el texto*/
+      color: black; }
+  main div .contenedor-boton {
+    grid-area: boton;
+    /*estilos al boton*/ }
+    main div .contenedor-boton button {
+      background-color: #dddddd;
+      border: 5px solid #000000;
+      height: 50px;
+      width: 150px;
+      margin-top: 1px;
+      text-align: center;
+      border-radius: 20%; }
+      main div .contenedor-boton button:hover {
+        background-color: #6b6b6b;
+        border: 5px solid #484848; }
+        main div .contenedor-boton button:hover a {
+          color: #dddddd; }
+          main div .contenedor-boton button:hover a:hover {
+            color: white; }
+      main div .contenedor-boton button a {
+        color: black; }
+  main div .contenedor-imagen {
+    grid-area: imagen;
+    /*estilos a la imagen*/ }
+    main div .contenedor-imagen img {
+      /*por el tamaño de la pantalla celular ocultamos la imagen*/
+      display: none; }
 
-.contenedor-titulo {
-  text-align: center;
-  grid-area: titulo; }
-
-main div p {
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
-  white-space: pre-line;
-  /*saltos de linea en el texto*/
-  color: #dddddd;
-  grid-area: escritura; }
-
-main div img {
-  display: none;
-  grid-area: foto; }
-
-main div button {
-  background-color: #dddddd;
-  border: 5px solid #466efd;
-  height: 50px;
-  width: 150px;
-  margin-top: 10px;
-  text-align: center;
-  grid-area: boton;
-  border-radius: 30%; }
-  main div button:hover {
-    background-color: #00e0b0;
-    border: 5px solid #00aee8; }
-    main div button:hover a {
-      color: #dddddd; }
-      main div button:hover a:hover {
-        color: green; }
-
-main div img {
-  display: none; }
+@media screen and (min-width: 600px) {
+  main {
+    height: 80vh; }
+    main section h2 {
+      margin-top: 1rem;
+      color: black;
+      font-size: 5rem;
+      text-align: center; }
+  main div {
+    display: grid;
+    grid-template-areas: "titulo     titulo" "escritura  imagen"             "boton      imagen";
+    justify-content: center;
+    align-items: center; }
+    main div .contenedor-titulo {
+      text-align: center;
+      grid-area: titulo; }
+      main div .contenedor-titulo h3 {
+        font-size: 3em; }
+    main div .contenedor-parrafo {
+      grid-area: escritura; }
+      main div .contenedor-parrafo p {
+        font-size: 1em; }
+    main div .contenedor-boton {
+      grid-area: boton; }
+    main div .contenedor-imagen {
+      grid-area: imagen;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main div .contenedor-imagen img {
+        display: block;
+        max-width: 70%;
+        height: auto; } }
 
 @media screen and (min-width: 1300px) {
-  main section h2 {
-    display: none; } }
+  main {
+    height: 80vh; }
+    main section h2 {
+      display: none; }
+  main div {
+    display: grid;
+    grid-template-areas: "titulo     titulo" "escritura  imagen"             "boton      imagen";
+    justify-content: center;
+    align-items: center; }
+    main div .contenedor-titulo {
+      margin-top: 0px;
+      grid-area: titulo; }
+      main div .contenedor-titulo h3 {
+        margin-top: 0px;
+        font-size: 4em; }
+    main div .contenedor-parrafo {
+      grid-area: escritura; }
+      main div .contenedor-parrafo p {
+        font-size: 1.2em; }
+    main div .contenedor-boton {
+      grid-area: boton; }
+    main div .contenedor-imagen {
+      grid-area: imagen;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main div .contenedor-imagen img {
+        display: block;
+        max-width: 70%;
+        height: auto; } }
 
 .body-index {
-  background-color: black; }
+  background-color: #F7F6FB; }
 
 html {
   scroll-behavior: smooth; }
@@ -130,13 +213,15 @@ html {
 /*-------------- FOOTER ------------------*/
 /*FOOTER AL FONDO*/
 footer p {
+  border: 1px solid black;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
-  position: sticky; }
+  margin-top: 10px;
+  padding: 10px;
+  color: #868686; }
 
 .body-index {
-  background-color: black; }
+  background-color: #F7F6FB; }
 
 html {
   scroll-behavior: smooth; }
@@ -148,3 +233,9 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  /*para que el contenido ocupe el 100% del alto*/
+  min-height: 100vh; }

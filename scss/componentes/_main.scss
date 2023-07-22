@@ -1,22 +1,34 @@
-//estilos del main
+
+
+//HAY QUE PONER TODO LO DE SASS MIXIN ETC... SON 5 EN TOTAL TODAS DIFERENTES
+
+/*estilos del main*/
 
 @import "../base/variables";
 
+/*estilos directos al main*/
 
 main{
-    height: 80vh;    
-
+    /*para que ocupe el 80% de lo disponible*/
+    height: 80vh;
+    /*hace que el contenido principal ocupe todo el espacio disponible en el eje vertical*/
+    flex: 1;
+    /*distancia entre los elementos*/
+    padding: 10px;
+        /*estilos del titulo secundario*/
         section h2{
             margin-top: 1rem;
-            color: $color-principal-titulo;
+            color: $color-alternativo-titulo;
             font-size: 3rem;
-            text-align: center;
+            text-align: center;            
+        
         }
-       
+
 }
 
-main div{
+/*estilos al contenedor div contenedor*/
 
+main div{
     display: grid;
     grid-template-areas: 
     "titulo"
@@ -24,82 +36,210 @@ main div{
     "boton";
     justify-content: center;
     align-items: center;
-    gap: 2%;
-    margin: 2%;
+    gap: 1%;
+    margin: 1%;
+    border: 1px solid black;
+    margin-bottom: 1%;
+     
+        /*estilos al contenedor del titulo de la division*/
+        .contenedor-titulo{
+            text-align: center;
+            grid-area: titulo;
 
-        div h3{
-            font-size: 2rem;
-            color: $color-principal-primario;
-        }
-}
+                /*estilos directos al titulo de la division*/
+                h3{
+                    font-size: 2rem;
+                    color: $color-alternativo-titulo;    
 
-.contenedor-titulo{
-    text-align: center;
-    grid-area: titulo;
-}
-
-main div p{
-    text-align: justify;
-    font-family: $parrafo-principal;
-    font-size: 0.8em;    
-    white-space: pre-line; /*saltos de linea en el texto*/
-    color: $color-principal-primario;
-    grid-area: escritura;
-}
-
-main div img{
-    display: none;
-    grid-area: foto;
-}
-
-main div button{
-    background-color: $color-principal-primario;
-    border: 5px solid $color-principal-secundario;
-    height: 50px;
-    width: 150px;
-    margin-top: 10px;
-    text-align: center;
-    grid-area: boton;
-    border-radius: 30%;
-        &:hover{
-            background-color: $color-principal-primario-hover;
-            border: 5px solid $color-principal-secundario-hover;
-                a{
-                    color: $color-principal-primario;
-                        &:hover{
-                            color: green;
-                        }
                 }
-        } 
+        }
+
+        /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
+        .contenedor-parrafo{
+            grid-area: escritura; 
+        
+                /*estilos al parrafo*/
+                p{
+                    text-align: justify;
+                    font-family: $parrafo-principal;
+                    font-size: 0.8em;    
+                    white-space: pre-line; /*saltos de linea en el texto*/
+                    color: $color-alternativo-titulo;
+                }
+        }
+
+        /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
+        .contenedor-boton{
+            grid-area: boton;
+
+                /*estilos al boton*/
+                button{
+                    background-color: $color-principal-primario;
+                    border: 5px solid $color-principal-secundario;
+                    height: 50px;
+                    width: 150px;
+                    margin-top: 1px;
+                    text-align: center;                                       
+                    border-radius: 20%;
+                        &:hover{
+                            background-color: $color-principal-primario-hover;
+                            border: 5px solid $color-principal-secundario-hover;
+                                a{
+                                                    color: $color-principal-primario;
+                                        &:hover{
+                                            color: rgb(255, 255, 255);
+                                        }
+                                }
+                        }
+                            a{
+                                color: $color-letras-boton;
+                            }
+                } 
+        }
+
+        /*estilos al contenedor de la imagen -- simplemente se le determino el area del grid*/
+        .contenedor-imagen{                    
+            grid-area: imagen;
+
+                /*estilos a la imagen*/
+                img{
+                    /*por el tamaño de la pantalla celular ocultamos la imagen*/   
+                    display: none;
+                    
+                }
+        }
+
 }
-
-main div img{
-    display: none;
-}
-
-
-
-
-//HAY QUE PONER TODO LO DE SASS MIXIN ETC... SON 5 EN TOTAL TODAS DIFERENTES
-
-
 
 //estilos al cambio de tamaño a tablet
 
 @media screen and (min-width: 600px) {
-
+    main{
+        height: 80vh;    
+        
     
+            section h2{
+                margin-top: 1rem;
+                color: $color-alternativo-titulo;
+                font-size: 5rem;
+                text-align: center;            
+            
+            }
+    
+    }
+    
+    main div{
+        display: grid;
+        grid-template-areas: 
+        "titulo     titulo"
+        "escritura  imagen"            
+        "boton      imagen";
+        justify-content: center;
+        align-items: center;           
+    
+            .contenedor-titulo{
+                text-align: center;
+                grid-area: titulo;
+    
+                    h3{
+                        font-size: 3em;                        
+                    }
+            }
+    
+            .contenedor-parrafo{
+                grid-area: escritura; 
+            
+                    p{                        
+                        font-size: 1em;
+                    }
+            }
+    
+            .contenedor-boton{
+                grid-area: boton;
+                    
+            }
+    
+            .contenedor-imagen{            
+                grid-area: imagen;
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    img{
+                        display: block;
+                        max-width: 70%;
+                        height: auto;
+                        
+                    }
+            }
+    
+    }
+
 }
+
 
 
 //estilos al cambio de tamaño a pc
 
 @media screen and (min-width: 1300px) {
-
-    main section h2{
-        display: none;
-    }
-}
+                
+    main{
+        height: 80vh;    
+        
     
+            section h2{
+                display: none;            
+            
+            }
+    
+    }
+    
+    main div{
+        display: grid;
+        grid-template-areas: 
+        "titulo     titulo"
+        "escritura  imagen"            
+        "boton      imagen";
+        justify-content: center;
+        align-items: center;           
+    
+            .contenedor-titulo{
+                margin-top: 0px;
+                grid-area: titulo;
+    
+                    h3{
+                        margin-top: 0px;
+                        font-size: 4em;                        
+                    }
+            }
+    
+            .contenedor-parrafo{
+                grid-area: escritura; 
+            
+                    p{                        
+                        font-size: 1.2em;
+                    }
+            }
+    
+            .contenedor-boton{
+                grid-area: boton;
+                    
+            }
+    
+            .contenedor-imagen{            
+                grid-area: imagen;
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                    img{
+                        display: block;
+                        max-width: 70%;
+                        height: auto;
+                        
+                    }
+            }
+    
+    }
 
-
+}

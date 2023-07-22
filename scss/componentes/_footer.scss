@@ -9,9 +9,10 @@
 /*FOOTER AL FONDO*/
 
 footer p{
+    border: 1px solid black;
     display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-    position: sticky;   
-     
+    justify-content: center;    
+    margin-top: 10px;
+    padding: 10px;   
+    color: $color-footer-primario; 
 }
