@@ -1,12 +1,8 @@
 @charset "UTF-8";
-.body-index {
-  background-color: #F7F6FB; }
-
-html {
-  scroll-behavior: smooth; }
-  html body {
-    overflow-y: auto;
-    overflow-x: hidden; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 /*-------- HEADER ----------*/
 /* BARRA ---- NAVEGADOR */
@@ -50,16 +46,7 @@ header nav div ul {
   header nav h1 {
     display: block; } }
 
-/*estilos del main*/
-.body-index {
-  background-color: #F7F6FB; }
-
-html {
-  scroll-behavior: smooth; }
-  html body {
-    overflow-y: auto;
-    overflow-x: hidden; }
-
+/*------------ESTILOS DEL MAIN---------------------*/
 /*estilos directos al main*/
 main {
   /*para que ocupe el 80% de lo disponible*/
@@ -67,7 +54,7 @@ main {
   /*hace que el contenido principal ocupe todo el espacio disponible en el eje vertical*/
   flex: 1;
   /*distancia entre los elementos*/
-  padding: 10px;
+  padding: 1px;
   /*estilos del titulo secundario*/ }
   main section h2 {
     margin-top: 1rem;
@@ -77,6 +64,7 @@ main {
 
 /*estilos al contenedor div contenedor*/
 main div {
+  max-height: 90vh;
   display: grid;
   grid-template-areas: "titulo" "escritura" "boton";
   justify-content: center;
@@ -84,7 +72,6 @@ main div {
   gap: 1%;
   margin: 1%;
   border: 1px solid black;
-  margin-bottom: 1%;
   /*estilos al contenedor del titulo de la division*/
   /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
   /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
@@ -129,7 +116,7 @@ main div {
   main div .contenedor-imagen {
     grid-area: imagen;
     /*estilos a la imagen*/ }
-    main div .contenedor-imagen img {
+    main div .contenedor-imagen .contenedor-imagen-img {
       /*por el tamaño de la pantalla celular ocultamos la imagen*/
       display: none; }
 
@@ -163,7 +150,7 @@ main div {
       display: flex;
       justify-content: center;
       align-items: center; }
-      main div .contenedor-imagen img {
+      main div .contenedor-imagen .contenedor-imagen-img {
         display: block;
         max-width: 70%;
         height: auto; } }
@@ -196,19 +183,10 @@ main div {
       display: flex;
       justify-content: center;
       align-items: center; }
-      main div .contenedor-imagen img {
+      main div .contenedor-imagen .contenedor-imagen-img {
         display: block;
         max-width: 70%;
         height: auto; } }
-
-.body-index {
-  background-color: #F7F6FB; }
-
-html {
-  scroll-behavior: smooth; }
-  html body {
-    overflow-y: auto;
-    overflow-x: hidden; }
 
 /*-------------- FOOTER ------------------*/
 /*FOOTER AL FONDO*/
@@ -216,26 +194,25 @@ footer p {
   border: 1px solid black;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 1px;
+  padding: 1px;
   color: #868686; }
 
-.body-index {
-  background-color: #F7F6FB; }
-
+/*----------------ESTILOS DEL CONTACTO---------------------------*/
 html {
   scroll-behavior: smooth; }
   html body {
     overflow-y: auto;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /*para que el contenido ocupe el 100% del alto*/
+    min-height: 100vh; }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+.body-index {
+  background-color: #F7F6FB; }
 
-body {
-  display: flex;
-  flex-direction: column;
-  /*para que el contenido ocupe el 100% del alto*/
-  min-height: 100vh; }
+.body-contacto {
+  background-image: url(../scss/assets/contacto.jpg);
+  background-size: cover;
+  height: 100vh; }

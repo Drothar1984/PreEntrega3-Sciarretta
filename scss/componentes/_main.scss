@@ -2,7 +2,7 @@
 
 //HAY QUE PONER TODO LO DE SASS MIXIN ETC... SON 5 EN TOTAL TODAS DIFERENTES
 
-/*estilos del main*/
+/*------------ESTILOS DEL MAIN---------------------*/
 
 @import "../base/variables";
 
@@ -14,7 +14,7 @@ main{
     /*hace que el contenido principal ocupe todo el espacio disponible en el eje vertical*/
     flex: 1;
     /*distancia entre los elementos*/
-    padding: 10px;
+    padding: 1px;
         /*estilos del titulo secundario*/
         section h2{
             margin-top: 1rem;
@@ -29,6 +29,7 @@ main{
 /*estilos al contenedor div contenedor*/
 
 main div{
+    max-height: 90vh;    
     display: grid;
     grid-template-areas: 
     "titulo"
@@ -38,8 +39,7 @@ main div{
     align-items: center;
     gap: 1%;
     margin: 1%;
-    border: 1px solid black;
-    margin-bottom: 1%;
+    border: 1px solid black;    
      
         /*estilos al contenedor del titulo de la division*/
         .contenedor-titulo{
@@ -102,7 +102,7 @@ main div{
             grid-area: imagen;
 
                 /*estilos a la imagen*/
-                img{
+                .contenedor-imagen-img{
                     /*por el tamaño de la pantalla celular ocultamos la imagen*/   
                     display: none;
                     
@@ -165,7 +165,7 @@ main div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                    img{
+                    .contenedor-imagen-img{
                         display: block;
                         max-width: 70%;
                         height: auto;
@@ -232,7 +232,7 @@ main div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                    img{
+                    .contenedor-imagen-img{
                         display: block;
                         max-width: 70%;
                         height: auto;

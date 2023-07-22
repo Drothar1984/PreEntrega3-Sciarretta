@@ -1,9 +1,3 @@
-//imports
-
-@import "componentes/header";
-@import "componentes/main";
-@import "componentes/footer";
-@import "../base/variables";
 
 
 // reset general
@@ -14,12 +8,41 @@
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    /*para que el contenido ocupe el 100% del alto*/
-    min-height: 100vh;
+//imports
+
+@import "componentes/header";
+@import "componentes/main";
+@import "componentes/footer";
+@import "../base/variables";
+@import "componentes/contacto";
+
+
+// ESTILOS DE PANTALLA GENERAL
+
+html{    
+    scroll-behavior: smooth; //que el movimiento del scroll sea suave
+
+        body{
+
+            //para que solo tenga scroll vertical 
+            overflow-y: auto; 
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            /*para que el contenido ocupe el 100% del alto*/
+            min-height: 100vh;
+        
+        }
 }
 
+.body-index{
+    background-color: $color-fondo-alternativo-dos;
+}
+
+.body-contacto{
+    background-image: url(../scss/assets/contacto.jpg);
+    background-size: cover;
+    height: 100vh;
+}
 
 

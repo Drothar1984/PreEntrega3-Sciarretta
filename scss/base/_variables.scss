@@ -44,28 +44,6 @@ $parrafo-principal: Arial, Helvetica, sans-serif;
 
 
 
-//BOTONES
 
 
 
-
-
-// ESTILOS DE PANTALLA GENERAL
-
-.body-index{
-    background-color: $color-fondo-alternativo-dos;
-}
-
-//
-
-html{    
-    scroll-behavior: smooth; //que el movimiento del scroll sea suave
-
-        body{
-
-            //para que solo tenga scroll vertical 
-            overflow-y: auto; 
-            overflow-x: hidden;
-        
-        }
-}
