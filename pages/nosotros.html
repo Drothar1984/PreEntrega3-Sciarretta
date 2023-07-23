@@ -6,7 +6,7 @@
     <!-- titulo de la pagina -->
     <title>Nosotros</title>
     <!-- icono en la barra del browser -->
-    <link rel="icon" type="image/jpg" href="../scss/assets/logo grande.jpg">
+    <link rel="icon" type="image/png" href="../scss/assets/logo-png.png">
     <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- link css -->
@@ -19,73 +19,76 @@
     <!-- inicio del header -->
     <header>
         
-      <!-- menu tipo nav -->
-      <nav class="menu">
-          
-          <div class="menu-contenedor">
-              <!-- imagente logo nav izquierdo -->
-              <img src="../scss/assets/policia de la ciudad.png" alt="" class="menu-img">            
-              <!-- boton del menu nav-->
-              <ul class="menu-contenedor-boton">
-                  <!-- menu hamburguesa de bootstrap-->
-                  <div class="dropdown">
-                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu de la División
-                      </a>
-                        
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                          <li><a class="dropdown-item" href="#">Sustraccion de Identidiad</a></li>
-                          <li><a class="dropdown-item" href="#">Phising</a></li>
-                          <li><a class="dropdown-item" href="#">Skimming</a></li>
-                          <li><a class="dropdown-item" href="#">Punto de Compromiso</a></li>
-                          <li><a class="dropdown-item" href="#">Contacto</a></li>
-                      </ul>                                           
-              </ul>
-          </div>
-          <!-- titulo principal -->
-          <h1 class="menu-titulo">
-                  Policia de la ciudad
-          </h1>
-          
-      </nav>
-              
-  </header>
+        <!-- menu tipo nav -->
+        <nav class="menu">
+            
+            <div class="menu-contenedor">
+                <!-- imagente logo nav izquierdo -->
+                <img src="../scss/assets/policia de la ciudad.png" alt="" class="menu-img">            
+                <!-- boton del menu nav-->
+                <ul class="menu-contenedor-boton">
+                    <!-- menu hamburguesa de bootstrap-->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Menu de la Division
+                        </a>
+                          
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>                            
+                            <li><a class="dropdown-item" href="identidad.html">Sustraccion de Identidiad</a></li>
+                            <li><a class="dropdown-item" href="phising.html">Phising</a></li>
+                            <li><a class="dropdown-item" href="skimming.html">Skimming</a></li>
+                            <li><a class="dropdown-item" href="nosotros.html">Punto de compromiso</a></li>
+                            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                        </ul>                                             
+                </ul>
+            </div>
+            <!-- titulo principal -->
+            <h1 class="menu-titulo">
+                    Policia de la ciudad
+            </h1>
+            
+        </nav>
+                
+    </header>
     
+       
     <!-- contenido principal -->
-    <main>
+    <main class="nosotros">
         
-        <div>
-            <h3>
-                Division Fraudes Bancarios
-            </h3>
+        <!-- titulo secundario -->
+        <section>
+            <h2>
+              Policia de la Ciudad
+            </h2>
+        </section>
+        <!--contenedor del main principal -->
+        <div class="nosotros-contenedor">
+            <!--titulo de la division-->
+            <div class="contenedor-titulo">
+                <h3>
+                    Division Fraudes Bancarios 
+                </h3>
+            </div>
+            <!--contenedor del parrafo-->
+            
+            <div class="nosotros-contenedor-imagenes">
+                <div class="nosotros-contenedor-imagenes-uno">
+                    <img src="../scss/assets/administracion.jpg" alt="imagen de la representativa de la oficina de administracion de la policia" class="img-uno">
+                </div>
+                <div class="nosotros-contenedor-imagenes-uno">
+                    <img src="../scss/assets/brigadas.jpg" alt="imagen del personal de la division fraudes bancarios trabajando" class="img-dos">
+                </div>
+                <div class="nosotros-contenedor-imagenes-uno">
+                    <img src="../scss/assets/judiciales.jpg" alt="imagen de la representativa de la oficia de judiciales de la policia" class="img-tres">
+                </div>                
+            </div>
+
+
         </div>
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="imagen1.jpg" alt="Imagen 1">
-              </div>
-              <div class="carousel-item">
-                <img src="imagen2.jpg" alt="Imagen 2">
-              </div>
-              <div class="carousel-item">
-                <img src="imagen3.jpg" alt="Imagen 3">
-              </div>
-              <div class="carousel-item">
-                <img src="imagen4.jpg" alt="Imagen 4">
-              </div>
-            </div>
-          </div>
-
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-          </a>
+    </main>
+            
  
     <!-- Pie de pagina -->
     <footer>
