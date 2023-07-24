@@ -71,7 +71,6 @@ main div {
   align-items: center;
   gap: 1%;
   margin: 1%;
-  border: 1px solid black;
   /*estilos al contenedor del titulo de la division*/
   /*estilos al contenedor del parrafo -- simplemente se le determino el area del grid*/
   /*estilos al contenedor del boton -- simplemente se le determino el area del grid*/
@@ -87,12 +86,8 @@ main div {
     grid-area: escritura;
     /*estilos al parrafo*/ }
     main div .contenedor-parrafo p {
-      text-align: justify;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.8em;
-      white-space: pre-line;
-      /*saltos de linea en el texto*/
-      color: black; }
+      color: black;
+      font-size: 0.8em; }
   main div .contenedor-boton {
     grid-area: boton;
     /*estilos al boton*/ }
@@ -103,14 +98,19 @@ main div {
       width: 150px;
       margin-top: 1px;
       text-align: center;
-      border-radius: 20%; }
+      border-radius: 10%;
+      transition: 2s; }
       main div .contenedor-boton button:hover {
         background-color: #6b6b6b;
-        border: 5px solid #484848; }
+        border: 5px solid #484848;
+        box-shadow: 20px 20px 60px #343434;
+        background-color: white;
+        transition: 2s;
+        border-radius: 100%; }
         main div .contenedor-boton button:hover a {
           color: #dddddd; }
           main div .contenedor-boton button:hover a:hover {
-            color: white; }
+            color: #2e2e2e; }
       main div .contenedor-boton button a {
         color: black; }
   main div .contenedor-imagen {
@@ -174,19 +174,7 @@ main div {
     main div .contenedor-parrafo {
       grid-area: escritura; }
       main div .contenedor-parrafo p {
-        font-size: 1.2em; }
-    main div .contenedor-boton {
-      grid-area: boton; }
-    main div .contenedor-imagen {
-      grid-area: imagen;
-      display: block;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      main div .contenedor-imagen .contenedor-imagen-img {
-        display: block;
-        max-width: 70%;
-        height: auto; } }
+        font-size: 1.2em; } }
 
 /*-------------ESTILO DE NOSOTROS---------------*/
 body main .nosotros-contenedor {
@@ -263,7 +251,6 @@ body main .nosotros-contenedor {
 /*-------------- FOOTER ------------------*/
 /*FOOTER AL FONDO*/
 footer p {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   margin-top: 1px;
@@ -307,18 +294,27 @@ body main .contacto-main {
         display: flex;
         justify-content: center;
         grid-area: boton;
-        /*estilos del boton*/
-        /*estilos del boton al momento de posicionarse sobre el mismo*/ }
+        /*estilos del boton*/ }
         body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo {
-          width: 150px;
+          background-color: #dddddd;
+          border: 5px solid #000000;
           height: 50px;
-          border: 3px solid red; }
-        body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover {
-          width: 160px;
-          height: 55px;
-          border: 3px solid lime;
-          color: gray;
-          border-radius: none; }
+          width: 150px;
+          margin-top: 1px;
+          text-align: center;
+          border-radius: 10%;
+          transition: 2s; }
+          body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover {
+            background-color: #6b6b6b;
+            border: 5px solid #484848;
+            box-shadow: 20px 20px 60px #343434;
+            background-color: white;
+            transition: 2s;
+            border-radius: 100%; }
+            body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover a {
+              color: #dddddd; }
+              body main .contacto-main .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover a:hover {
+                color: #2e2e2e; }
 
 @media screen and (min-width: 600px) {
   main section .h2-contacto {
@@ -331,6 +327,12 @@ body main .contacto-main {
   .nosotros-contenedor-imagenes {
     margin-top: 0px;
     font-size: 4em; } }
+
+main div .contenedor-parrafo p, .nosotros-contenedor-imagenes .nosotros-contenedor-imagenes-uno .nosotros-contenedor-imagenes-uno-texto {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre-line;
+  /*saltos de linea en el texto*/ }
 
 html {
   scroll-behavior: smooth; }

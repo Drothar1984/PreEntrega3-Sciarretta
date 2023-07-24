@@ -39,7 +39,7 @@ main div{
     align-items: center;
     gap: 1%;
     margin: 1%;
-    border: 1px solid black;    
+        
      
         /*estilos al contenedor del titulo de la division*/
         .contenedor-titulo{
@@ -60,11 +60,9 @@ main div{
         
                 /*estilos al parrafo*/
                 p{
-                    text-align: justify;
-                    font-family: $parrafo-principal;
-                    font-size: 0.8em;    
-                    white-space: pre-line; /*saltos de linea en el texto*/
                     color: $color-alternativo-titulo;
+                    font-size: 0.8em;  
+                    @extend %estilos;
                 }
         }
 
@@ -80,14 +78,15 @@ main div{
                     width: 150px;
                     margin-top: 1px;
                     text-align: center;                                       
-                    border-radius: 20%;
+                    @include boton-animado;
                         &:hover{
                             background-color: $color-principal-primario-hover;
                             border: 5px solid $color-principal-secundario-hover;
+                            @include boton-animado-hover;
                                 a{
-                                                    color: $color-principal-primario;
+                                    color: $color-principal-primario;
                                         &:hover{
-                                            color: rgb(255, 255, 255);
+                                            color: rgb(46, 46, 46);
                                         }
                                 }
                         }
@@ -216,32 +215,11 @@ main div{
             .contenedor-parrafo{
                 grid-area: escritura; 
             
-                    p{                        
+                    p{                                                
                         font-size: 1.2em;
                     }
             }
-    
-            .contenedor-boton{
-                grid-area: boton;
-                    
-            }
-    
-            .contenedor-imagen{            
-                grid-area: imagen;
-                display: block;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                    .contenedor-imagen-img{
-                        display: block;
-                        max-width: 70%;
-                        height: auto;
-                        
-                    }
-            }
-    
     }
-
 }
 
 
@@ -283,6 +261,7 @@ body main .nosotros-contenedor{
                 }
                 .nosotros-contenedor-imagenes-uno-texto{
                     @include texto;
+                    @extend %estilos;
                 }
         }
 }
