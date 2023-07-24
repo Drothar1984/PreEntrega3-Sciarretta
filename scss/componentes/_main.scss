@@ -5,7 +5,7 @@
 /*------------ESTILOS DEL MAIN---------------------*/
 
 @import "../base/variables";
-
+@import "../base/mixin";
 /*estilos directos al main*/
 
 main{
@@ -141,7 +141,7 @@ main div{
                 text-align: center;
                 grid-area: titulo;
     
-                    h3{
+                    .contenedor-titutlo-h3{
                         font-size: 3em;                        
                     }
             }
@@ -207,7 +207,7 @@ main div{
                 margin-top: 0px;
                 grid-area: titulo;
     
-                    h3{
+                    .contenedor-titutlo-h3{
                         margin-top: 0px;
                         font-size: 4em;                        
                     }
@@ -262,6 +262,7 @@ body main .nosotros-contenedor{
     grid-template-rows: repeat(3,30%);
     gap: 2rem;
     margin: 3rem 2rem 3rem 1rem;
+    position: relative;
 
         
         .nosotros-contenedor-imagenes-uno{
@@ -272,6 +273,7 @@ body main .nosotros-contenedor{
             display: flex;
             justify-content: center;
             align-items: center;
+            perspective: 1000px;                    
             
 
                 img{
@@ -279,11 +281,26 @@ body main .nosotros-contenedor{
                     max-height: 100%;
                     object-fit: cover;
                 }
+                .nosotros-contenedor-imagenes-uno-texto{
+                    @include texto;
+                }
         }
 }
 
+.nosotros-contenedor-imagenes-uno:hover .nosotros-contenedor-imagenes-uno-texto{
+    opacity: 1;
 
-       
+}
+
+.nosotros-contenedor-imagenes-uno:hover img-uno{
+    transform: rotateY(180deg);
+    opacity: 0.2;
+    filter: blur(10px);
+    filter: grayscale(60%);
+
+}
+
+
 
 @media screen and (min-width: 600px) {
     

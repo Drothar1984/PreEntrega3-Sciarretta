@@ -5,7 +5,7 @@ body main section .h2-contacto{
     color: $color-principal-primario;
 }
 
-body main .contenedor{
+body main .contacto-main{
     display: grid;
     grid-template-areas: 
     "titulo"
@@ -85,3 +85,25 @@ body main .contenedor{
         
 }
 
+
+@media screen and (min-width: 600px) {
+    
+    main section .h2-contacto{
+        display: none;
+    }
+
+    div div .contenedor-titulo-h3c{
+        font-size: 3em;
+    }
+}
+
+/* mq de desktop */
+
+@media screen and (min-width: 1024px) {
+
+    .nosotros-contenedor-imagenes{
+        margin-top: 0px;
+        font-size: 4em;                        
+    
+    }
+}
