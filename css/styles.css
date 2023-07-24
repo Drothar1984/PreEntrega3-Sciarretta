@@ -80,7 +80,7 @@ main div {
     text-align: center;
     grid-area: titulo;
     /*estilos directos al titulo de la division*/ }
-    main div .contenedor-titulo h3 {
+    main div .contenedor-titulo .contenedor-titutlo-h3 {
       font-size: 2rem;
       color: black; }
   main div .contenedor-parrafo {
@@ -188,7 +188,7 @@ main div {
         max-width: 70%;
         height: auto; } }
 
-/*-------------ESTILO DE CONTACTO---------------*/
+/*-------------ESTILO DE NOSOTROS---------------*/
 body main .nosotros-contenedor {
   display: block;
   display: flex;
@@ -244,6 +244,56 @@ footer p {
   margin-top: 1px;
   padding: 1px;
   color: #868686; }
+
+/*---------------ESTILO CONTACTO----------------*/
+body main section .h2-contacto {
+  color: #dddddd; }
+
+body main .contenedor {
+  display: grid;
+  grid-template-areas: "titulo" "elementos" "descripcion" "boton";
+  justify-content: center;
+  align-items: center; }
+  body main .contenedor div .contenedor-titulo-h3c {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    color: #dddddd;
+    text-decoration: underline 3px solid #dddddd; }
+  body main .contenedor .contacto-contenedor-elementos {
+    grid-area: elementos; }
+    body main .contenedor .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario {
+      display: flex;
+      flex-direction: column;
+      background-color: gray;
+      grid-template-areas: formulario;
+      /*estilos sobre el contenedor del boton*/ }
+      body main .contenedor .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario div .contacto-contenedor-elementos-formulario-informacion-linea {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        color: #dddddd; }
+        body main .contenedor .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario div .contacto-contenedor-elementos-formulario-informacion-linea label {
+          display: inline-block;
+          width: 100px; }
+      body main .contenedor .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-texto {
+        grid-area: descripcion; }
+      body main .contenedor .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton {
+        display: flex;
+        justify-content: center;
+        grid-area: boton;
+        /*estilos del boton*/
+        /*estilos del boton al momento de posicionarse sobre el mismo*/ }
+        body main .contenedor .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo {
+          width: 150px;
+          height: 50px;
+          border: 3px solid red; }
+        body main .contenedor .contacto-contenedor-elementos .contacto-contenedor-elementos-formulario .contacto-contenedor-elementos-formulario-boton .contacto-contenedor-elementos-formulario-boton-estilo:hover {
+          width: 160px;
+          height: 55px;
+          border: 3px solid lime;
+          color: gray;
+          border-radius: none; }
 
 html {
   scroll-behavior: smooth; }

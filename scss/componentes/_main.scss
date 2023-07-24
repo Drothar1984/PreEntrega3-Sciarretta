@@ -47,7 +47,7 @@ main div{
             grid-area: titulo;
 
                 /*estilos directos al titulo de la division*/
-                h3{
+                .contenedor-titutlo-h3{
                     font-size: 2rem;
                     color: $color-alternativo-titulo;    
 
@@ -245,7 +245,7 @@ main div{
 }
 
 
-/*-------------ESTILO DE CONTACTO---------------*/
+/*-------------ESTILO DE NOSOTROS---------------*/
 
 body main .nosotros-contenedor{
     display: block;
